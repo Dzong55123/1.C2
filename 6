@@ -1,0 +1,13 @@
+chinese = float(input("請輸入國文成績："))
+english = float(input("請輸入英文成績："))
+math = float(input("請輸入數學成績："))
+
+if chinese >= 60 and english >= 60 and math >= 60:
+    print("ALL PASS")
+else:
+    if chinese < 60:
+        print("國文 FAIL")
+    if english < 60:
+        print("英文 FAIL")
+    if math < 60:
+        print("數學 FAIL")
