@@ -1,0 +1,13 @@
+for _ in range(4):
+    sides = input("請輸入三個整數，用空格分隔：").split()
+    a, b, c = sorted(map(int, sides))
+    
+    if a + b > c:
+        if a**2 + b**2 == c**2:
+            print("直角三角形")
+        elif a**2 + b**2 < c**2:
+            print("鈍角三角形")
+        elif a**2 + b**2 > c**2:
+            print("銳角三角形")
+    else:
+        print("不是三角形")
